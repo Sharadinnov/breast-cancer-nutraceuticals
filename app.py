@@ -3,7 +3,7 @@ import pandas as pd
 
 # Load Excel file
 def load_data():
-    file_path = 'C:\\Users\\Admin\\Desktop\\Database for coding.xlsx'
+    file_path = 'Database for coding.xlsx'
     xl = pd.ExcelFile(file_path)
     mutations_df = xl.parse('Cancer To Gene')  # Load first sheet
     nutraceuticals_df = xl.parse('Gene to Nutraceutical')  # Load second sheet
